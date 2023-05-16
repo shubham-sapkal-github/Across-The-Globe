@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATG WORLD</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./reposnsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      style="z-index: 5555"
+      class="navbar navbar-expand-lg navbar-expand-md navbar-light sticky-top"
+      style="height: 80px"
+    >
+      <div
+        class="container-fluid small-screen responsive-navbar desktop-navbar2"
+      >
+        <a class="navbar-brand logo-small-screen logo-nabar2" href="#"
+          ><img src="./images/logo.svg" alt="Website Logo"
+        /></a>
+        <form class="d-flex searchbar-navbar2">
+          <div>
+            <input
+              class="form-control rounded-pill search-bar custom-input text"
+              type="search"
+              placeholder="Search for your favorite groups in ATG"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+        <div class="d-flex">
+          <div class="logged-in-user dropdown dropdown-toggle">
+            <img
+              class="profile-img"
+              src="./images/profile4.svg"
+              alt="Profile Picture"
+            />
+            <div class="username">Sidharth Goyal</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image -->
+    <div class="container-fluid p-0 banner-container">
+      <div class="gradient-overlay"></div>
+      <img
+        class="banner-img"
+        src="./images/banner.svg"
+        alt="Banner Image"
+        style="width: 100%"
+      />
+      <img
+        class="responsive-banner-img"
+        src="./images/responsive-bg-img.svg"
+        alt="Banner Image"
+        style="width: 100%"
+      />
+      <div class="banner-text">
+        <p>Computer Engineering</p>
+        <p>142,765 Computer Engineers follow this</p>
+      </div>
+    </div>
+
+    <!-- filter secrtion -->
+
+    <div class="links-container">
+      <div class="custom-container sticky-links responsive-custom-container">
+        <a class="btn mb-2 post-count">Posts(368)</a>
+        <div class="hidden-links">
+          <div class="link-text">
+            <a class="btn mb-2">All posts (32)</a>
+            <a class="btn mb-2 light-text">Article</a>
+            <a class="btn mb-2 light-text">Event</a>
+            <a class="btn mb-2 light-text">Education</a>
+            <a class="btn mb-2 light-text">Job</a>
+          </div>
+        </div>
+        <div class="">
+          <div class="">
+            <a
+              class="btn mr-2 dropdown dropdown-toggle post custom-dropdown-post"
+              ><span id="filter"></span>
+            </a>
+            <a class="btn leave-group"
+              ><img
+                src="./images/icons/leaveGroup.svg"
+                alt="leave_group_icon"
+              />
+              <span>Leave Group</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr style="width: 80%; margin: 0px auto" />
+    </div>
+
+    <!-- Main Section -->
+    <div class="container mt-2 remove-container">
+      <div class="row">
+        <div class="col-md-7 main-section">
+          <div class="reusable-card">
+            <img class="poster" src="./images/forest.svg" alt="Image" />
+            <div class="reusable-card-content">
+              <img
+                class="article_text"
+                src="./images/icons/✍️ Article.svg"
+                alt=""
+              />
+              <h3>
+                What if famous brands had regular fonts? Meet RegulaBrands!<span
+                  class="dropdown"
+                  >&#x2022;&#x2022;&#x2022;
+                  <div class="dropdown-content">
+                    <a href="">Edit</a>
+                    <a href="">Report</a>
+                    <a href="">Delete</a>
+                  </div></span
+                >
+              </h3>
+              <p class="reusable-card-p">
+                I’ve worked in UX for the better part of a decade. From now on,
+                I plan to rei…
+              </p>
+              <div class="profile">
+                <img
+                  class="profile-img"
+                  src="./images/profile1.svg"
+                  alt="Profile Picture"
+                />
+                <div class="username">John Doe</div>
+                <div class="views">
+                  <img class="vision" src="./images/icons/eye.svg" />1.4k views
+                </div>
+                <img class="share-button" src="./images/icons/shareIcon.svg" />
+                <div class="mobile-profile">
+                  <div class="mobile-user-profile">
+                    <div>John Doe</div>
+                    <p>1.4k views</p>
+                  </div>
+                  <div class="mobile-share-btn">
+                    <img
+                      id="mobile-share-img"
+                      src="./images/icons/shareIcon.svg"
+                    />Share
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="pink-edit-btn"
+            src="./images/icons/pink-edit-button.svg"
+            alt="Pink edit button"
+          />
+          <div class="reusable-card">
+            <img src="./images/house.svg" alt="Image" />
+            <div class="reusable-card-content">
+              <img
+                class="article_text"
+                src="./images/icons/education.svg"
+                alt=""
+              />
+              <h3>
+                Tax Benefits for Investment under National Pension Scheme
+                launched by Government<span class="dropdown"
+                  >&#x2022;&#x2022;&#x2022;
+                  <div class="dropdown-content">
+                    <a href="">Edit</a>
+                    <a href="">Report</a>
+                    <a href="">Delete</a>
+                  </div></span
+                >
+              </h3>
+              <p class="reusable-card-p">
+                I’ve worked in UX for the better part of a decade. From now on,
+                I plan to rei…
+              </p>
+              <div class="profile">
+                <img
+                  class="profile-img"
+                  src="./images/profile2.svg"
+                  alt="Profile Picture"
+                />
+                <div class="username">Sarah West</div>
+                <div class="views">
+                  <img class="vision" src="./images/icons/eye.svg" />1.4k views
+                </div>
+                <img class="share-button" src="./images/icons/shareIcon.svg" />
+                <div class="mobile-profile">
+                  <div class="mobile-user-profile">
+                    <div>John Doe</div>
+                    <p>1.4k views</p>
+                  </div>
+                  <div class="mobile-share-btn">
+                    <img
+                      id="mobile-share-img"
+                      src="./images/icons/shareIcon.svg"
+                    />Share
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reusable-card">
+            <img src="./images/car.svg" alt="Image" />
+            <div class="reusable-card-content">
+              <img
+                class="article_text"
+                src="./images/icons/meetup.svg"
+                alt=""
+              />
+              <h3>
+                Finance & Investment Elite Social Mixer @Lujiazui<span
+                  class="dropdown"
+                  >&#x2022;&#x2022;&#x2022;
+                  <div class="dropdown-content">
+                    <a href="">Edit</a>
+                    <a href="">Report</a>
+                    <a href="">Delete</a>
+                  </div></span
+                >
+              </h3>
+              <div class="date-location_container">
+                <p>
+                  <img src="./images/icons/calender.svg" alt="" /> Fri, 12 Oct,
+                  2018
+                </p>
+                <p>
+                  <img src="./images/icons/LocationPing.svg" alt="" />
+                  Ahmedabad, India
+                </p>
+              </div>
+              <div class="view-website-button-container">
+                <button>View Website</button>
+              </div>
+              <div class="profile">
+                <img
+                  class="profile-img"
+                  src="./images/profile3.svg"
+                  alt="Profile Picture"
+                />
+                <div class="username">Ronal Jones</div>
+                <div class="views">
+                  <img class="vision" src="./images/icons/eye.svg" />1.4k views
+                </div>
+                <img class="share-button" src="./images/icons/shareIcon.svg" />
+                <div class="mobile-profile">
+                  <div class="mobile-user-profile">
+                    <div>John Doe</div>
+                    <p>1.4k views</p>
+                  </div>
+                  <div class="mobile-share-btn">
+                    <img
+                      id="mobile-share-img"
+                      src="./images/icons/shareIcon.svg"
+                    />Share
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reusable-card">
+            <div class="reusable-card-content">
+              <img
+                class="article_text"
+                style="width: 57px !important"
+                src="./images/icons/job.svg"
+                alt=""
+              />
+              <h3>
+                Software Developer<span class="dropdown"
+                  >&#x2022;&#x2022;&#x2022;
+                  <div class="dropdown-content">
+                    <a href="">Edit</a>
+                    <a href="">Report</a>
+                    <a href="">Delete</a>
+                  </div></span
+                >
+              </h3>
+              <div class="date-location_container">
+                <p>
+                  <img src="./images/icons/suitcaseIcon.svg" alt="" />
+                  Innovaccer Analytics Private Ltd.
+                </p>
+                <p>
+                  <img src="./images/icons/LocationPing.svg" alt="" /> Noida,
+                  India
+                </p>
+              </div>
+              <div class="view-website-button-container">
+                <button style="color: #02b875">Apply on Timesjobs</button>
+              </div>
+              <div class="profile">
+                <img
+                  class="profile-img"
+                  src="./images/profile4.svg"
+                  alt="Profile Picture"
+                />
+                <div class="username">Joseph Gray</div>
+                <div class="views">
+                  <img class="vision" src="./images/icons/eye.svg" />1.4k views
+                </div>
+                <img class="share-button" src="./images/icons/shareIcon.svg" />
+                <div class="mobile-profile">
+                  <div class="mobile-user-profile">
+                    <div>John Doe</div>
+                    <p>1.4k views</p>
+                  </div>
+                  <div class="mobile-share-btn">
+                    <img
+                      id="mobile-share-img"
+                      src="./images/icons/shareIcon.svg"
+                    />Share
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aside section starts here -->
+
+        <div class="col-md-4 offset-sm-1 sidebar-text">
+          <div class="sidebar_container">
+            <div class="add_location_container">
+              <div>
+                <img src="./images/icons/LocationPing.svg" alt="" />
+                <input
+                  class="add_location_input"
+                  placeholder="Enter your location"
+                  type="text"
+                />
+              </div>
+              <img src="./images/icons/cross.svg" alt="" />
+            </div>
+            <div class="sidebar_Warning_note_container">
+              <img src="./images/icons/WarningComment.svg" alt="" />
+              <p>
+                Your location will help us serve better and extend a
+                personalised experience.
+              </p>
+            </div>
+            <div class="groups">
+              <div class="logged-in-user recommended">
+                <img
+                  src="./images/icons/thumbs-up.svg"
+                  alt="thumbs-up"
+                />RECOMMENDED GROUPS
+              </div>
+              <div class="group">
+                <div class="logged-in-user">
+                  <img
+                    src="./images/Groups-images/leisure.svg"
+                    alt="guy in hammock"
+                  />
+                  <div class="username">Leisure</div>
+                </div>
+                <button
+                  class="btn follow-btn"
+                  id="follow-btn1"
+                  onclick="followedToggleClass(this) "
+                >
+                  Follow
+                </button>
+              </div>
+              <div class="group">
+                <div class="logged-in-user">
+                  <img
+                    src="./images/Groups-images/activism.svg"
+                    alt="Placard"
+                  />
+                  <div class="username">Activism</div>
+                </div>
+                <button
+                  class="btn follow-btn"
+                  id="follow-btn2"
+                  onclick="followedToggleClass(this) "
+                >
+                  Follow
+                </button>
+              </div>
+              <div class="group">
+                <div class="logged-in-user">
+                  <img
+                    src="./images/Groups-images/mba.svg"
+                    alt="Guy in black suit"
+                  />
+                  <div class="username">MBA</div>
+                </div>
+                <button
+                  class="btn follow-btn"
+                  id="follow-btn3"
+                  onclick="followedToggleClass(this) "
+                >
+                  Follow
+                </button>
+              </div>
+              <div class="group">
+                <div class="logged-in-user">
+                  <img
+                    src="./images/Groups-images/philosophy.svg"
+                    alt="Philosopher statue"
+                  />
+                  <div class="username">Philosophy</div>
+                </div>
+                <button
+                  class="btn follow-btn"
+                  id="follow-btn4"
+                  onclick="followedToggleClass(this) "
+                >
+                  Follow
+                </button>
+              </div>
+              <button class="btn see-more">See More...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
